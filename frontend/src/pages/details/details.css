@@ -1,0 +1,66 @@
+.singlePage {
+  padding: 20px 20px; /* Added padding on the sides */
+  background: #fff;
+  max-width: 1300px; /* Limit the maximum width of the content */
+  margin: 0 auto; /* Center align the content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.singlePage .right {
+  margin-top: 20px; /* Reduced margin-top */
+}
+
+.singlePage img {
+  max-width: 100%; /* Ensure the image doesn't stretch beyond its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure the image behaves as a block element */
+  border-radius: 20px;
+  margin: 0 auto; /* Center align the image */
+}
+
+.singlePage h1 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 20px; /* Adjusted top margin */
+}
+
+.singlePage p {
+  margin: 10px 0; /* Reduced margin */
+  font-size: 16px; /* Slightly reduced font size */
+  line-height: 1.6;
+}
+
+.singlePage .buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px; /* Added margin-top */
+  gap: 5px;
+}
+
+.singlePage .button {
+  padding: 10px 20px; /* Adjusted padding */
+  border: none;
+  color: #fff; /* Added text color */
+  cursor: pointer;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.singlePage .button:nth-child(1) {
+  background: #10ac84;
+}
+
+.singlePage .button:nth-child(2) {
+  background: #ee5253;
+}
+
+.updateInput {
+  border: 1px solid #ddd; /* Lighter border color */
+  padding: 15px; /* Reduced padding */
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 16px; /* Slightly reduced font size */
+  font-family: serif;
+}

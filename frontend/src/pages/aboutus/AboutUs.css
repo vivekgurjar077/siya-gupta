@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5e6cc;
+  color: #472b13;
+}
+
+.header {
+  background-color: #472b13;
+  color: #f7f3ee;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+  position: relative;
+  padding-bottom: 15px;
+  position:sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+.content-aboutus {
+  padding-top: 0px;
+  padding-left: 155px;
+  padding-right: 5px;
+  text-align: center;
+  position: relative; /* Needed for the pseudo-element positioning */
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 1000px; /* Restrict the width to resemble a piece of paper */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to enhance the paper-like appearance */
+  overflow: hidden; /* Ensure the pseudo-element stays within the content area */
+}
+
+.content-aboutus::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../assets/images/binder.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(3px); /* Adjust the blur level as needed */
+  z-index: -1; /* Place the pseudo-element behind the content */
+}
+.founder {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.content h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.book-icon {
+  font-size: 72px;
+  color: #472b13;
+  margin-bottom: 20px;
+}
+
+.book_title {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Round images and add hover effect */
+.img-format img{
+  border-radius: 50%;
+} .MGD img {
+  border-radius: 5%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.founder{
+  margin-top: 15px;
+}
+.MGD{
+  margin-top: 20px;
+}
+.img-format img:hover, .content img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 480px) {
+  .content-aboutus {
+    padding-left: 20px;
+  }
+  }

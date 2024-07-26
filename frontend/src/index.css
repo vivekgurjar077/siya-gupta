@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #000;
+}
+h1,
+h2 {
+  font-weight: 600;
+}
+h3 {
+  font-weight: 500;
+}
+ul,
+li,
+a,
+button,
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  list-style-type: none;
+}
+::placeholder {
+  font-size: 17px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  color: #5a5a5a;
+  font-size: 15px;
+}
+label {
+  color: #999;
+  font-size: 13px;
+}
+select,
+form,
+.boxItems {
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 20px;
+  background: #fff;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: auto;
+  margin-top: 80px;
+  padding: 40px;
+}
+form span {
+  margin-bottom: 20px;
+}
+form textarea,
+.accountInfo .right input,
+form select,
+form input {
+  border: 1px solid #212121;
+  border-radius: 6px;
+  color: #212121;
+  font-size: 15px;
+  min-height: 40px;
+  padding: 0 20px;
+  transition: border-color 0.2s ease;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.s-s-btn{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+  
+}
+.search-bar {
+  margin-left: 0px;
+  border-radius: 20px;
+  padding: 10px 50px;
+  font-weight: bold;
+  font-size: 15px;
+  height: 40px;
+  color: white;
+  background-color: #3d2c29;
+}
+
+.search-bar input {
+  color: #fff;
+  background-color: #3d2c29; 
+  border: none; 
+}
+
+.search-bar input::placeholder {
+  color: #fff; 
+}
+
+.create-btn {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px 50px;
+  font-weight: bold;
+  font-size: 15px;
+  height: 40px;
+  color:white;
+  border: none; 
+  background-color: #3d2c29;
+}
+.button {
+  background: #212121;
+  border: 1px solid;
+  border-color: #212121;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+  height: 40px;
+  line-height: 1;
+  padding: 15px 28px;
+  border: none; 
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+.container {
+  max-width: 95%;
+  margin: auto;
+}
+footer {
+  margin-top: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+footer .social {
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  color: #000;
+}
+.social a{
+  color: black;
+}
+footer .icon {
+  font-size: 30px;
+  margin-left: 10px;
+}
+.link {
+  margin-top: 20px;
+  color: blue;
+}
+@media screen and (max-width: 768px) {
+  .grid3,
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #A97947;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  margin-top: 20px;
+  object-fit: cover;
+  height:300px;
+}
+.com-feed{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  color:#3d2c29;
+}
+
+@media (max-width: 480px) {
+  
+.hero {
+  height: 500px;
+}
+
+.hero h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 400px;
+}
+.hero-image {
+  height:250px;
+}
+footer{
+  padding: 0px;
+}
+footer p{
+  width: 80px;  
+}
+.flex{
+  margin-left: 0px;
+}
+form {
+  width: 80%;
+}
+.s-s-btn{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.search-bar {
+  padding: 10px 5px;
+}
+
+.search-bar input {
+  padding: 0px; 
+}
+.create-btn {
+  padding: 10px 5px;
+  width: 300px;
+  margin-left: 10px;
+  }
+
+}
